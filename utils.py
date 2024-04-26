@@ -44,7 +44,7 @@ def transform_result_dict(ori_dict):
         result_pep = ori_pep
         for action_num in ori_dict[key][0][:-3]:
             mutate_pos, mutate_type = action_transfer(action_num)
-            action_string = "{}{}{}".format(ori_pep[mutate_pos], mutate_pos, mutate_type)
+            action_string = "{}{}{}".format(ori_pep[mutate_pos], mutate_pos+1, mutate_type)
             action_string_list.append(action_string)
             result_pep = mutate_pep(result_pep, action_num)
         
