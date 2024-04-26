@@ -17,7 +17,7 @@ This will automatically setup the environment.
 For a specified peptide-HLA pair, run main.py with:
 
 ```shell
-python main.py --peptide VMMGLLMFS --HLA HLA-A*26:01 --num_simulations 60
+python main.py --peptide VMMGLLMFS --HLA HLA-A*26:01 --num_simulations 10
 ```
 
 Parameter --num_simulations is the number of simulations of MCTS performed. Ajusting this value will influence both the process time and the obtained results.
@@ -46,6 +46,6 @@ HLA-B*07:02
 note that the number of HLA alleles should match the number of peptides in the fasta file. Then you can safely run main.py with:
 
 ```shell
-python main.py --peptide_fasta peptides.fa --HLA_file HLAs.txt --num_simulations 60
+python main.py --peptide_fasta peptides.fa --HLA_file HLAs.txt --num_simulations 10
 ```
 
