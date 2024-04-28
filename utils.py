@@ -251,7 +251,7 @@ def get_pep_hla_attention_vector(pep_seq, hla_type, env_name, multi_core_num, py
     binding_data = pd.read_csv(binding_result_csv)
     binding_result = binding_data['y_pred'][0]
 
-    # binding_affinity added. Remember to add this to the corresponding codes such as aomp_env.py
+    # binding_affinity added. Remember to add this to the corresponding codes such as ultramutate_env.py
     binding_affinity = binding_data['y_prob'][0]
 
 
