@@ -2,7 +2,7 @@ import numpy as np
 import torch
 import utils
 from MCTS_Ultramutate import *
-from Networks import *
+from aomp_DQNNet import *
 import time
 from ultramutate_env import *
 import argparse
